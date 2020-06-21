@@ -14,7 +14,7 @@ var facts = ["מה קשור",
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity("מחפשת אהבה (עדי));
+    bot.user.setActivity("מחפשת אהבה \(עדי\));
 
 });
 
