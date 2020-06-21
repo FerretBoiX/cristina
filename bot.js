@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
- 
+var facts = ["מה קשור",
+             "סוקה בלאט",
+             "אידי נחוי"];
 
 bot.on('ready', () => {
 
@@ -18,7 +20,8 @@ bot.on('message', message => {
   message.channel.send("גם אני אוהבת אותך עדי");
   }
  else if(message.isMemberMentioned(bot.user)) {
-  message.channel.send("מה קשור");
+  var fact = Math.floor(Math.random() * facts.length);
+  message.channel.send(facts[fact]);
   }
 });
 
