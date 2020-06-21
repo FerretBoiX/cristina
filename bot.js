@@ -14,8 +14,9 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
 
-
-
+ if(message.author.id == "545999659769004060") {
+  message.channel.send("גם אני אוהבת אותך עדי");
+ }
 });
 
  
