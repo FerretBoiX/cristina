@@ -24,6 +24,9 @@ bot.on('message', message => {
  if(message.author.id == "545999659769004060") {
   message.channel.send("גם אני אוהבת אותך עדי");
   }
+ else if(message.content == "קריסטינה בואי לכאן") {
+   message.member.voiceChannel.join();
+  }
  else if(message.isMemberMentioned(bot.user)) {
   var fact = Math.floor(Math.random() * facts.length);
   message.channel.send(facts[fact]);
