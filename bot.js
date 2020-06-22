@@ -9,6 +9,7 @@ var facts = ["אני פרה ואני גאה",
 bot.on('ready', () => {
 
     console.log('I am ready!');
+    bot.user.setActivity('מחפשת שומן', { type: 'PLAYING' });
 
 });
 
