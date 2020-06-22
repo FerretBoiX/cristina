@@ -20,20 +20,20 @@ bot.on('ready', () => {
 
  
 
-bot.on('message', message => {
+//bot.on('message', message => {
 
- if(message.author.id == "545999659769004060") {
-  message.channel.send("גם אני אוהבת אותך עדי");
-  }
- else if(message.content.startsWith("!קריס")) {
-    message.channel.send(message.content.substring(6));
-    message.delete()
-  }
- else if(message.isMemberMentioned(bot.user)) {
-  var fact = Math.floor(Math.random() * facts.length);
-  message.channel.send(facts[fact]);
-  }
-});
+// if(message.author.id == "545999659769004060") {
+//  message.channel.send("גם אני אוהבת אותך עדי");
+//  }
+// else if(message.content.startsWith("!קריס")) {
+//    message.channel.send(message.content.substring(6));
+//    message.delete()
+//  }
+// else if(message.isMemberMentioned(bot.user)) {
+//  var fact = Math.floor(Math.random() * facts.length);
+//  message.channel.send(facts[fact]);
+//  }
+//});
 
  
 
