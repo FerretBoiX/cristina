@@ -2,14 +2,13 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
-var facts = ["אני נפתחת לכל מי שרוצה",
-             "אני הדלת וליעד הוא המפתח"
+var facts = ["אני פרה ואני גאה",
+             "שומן הוא המאכל האהוב עליי"
              ];
 
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity('מחפשת אהבה (ליעד)', { type: 'PLAYING' });
 
 });
 
