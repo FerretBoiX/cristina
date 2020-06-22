@@ -11,7 +11,7 @@ var facts = ["אני השחר העולה",
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity('מחפשת שומן', { type: 'PLAYING' });
+    bot.user.setActivity('ללא כלוסטרול', { type: 'PLAYING' });
 
 });
 
