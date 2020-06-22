@@ -9,7 +9,7 @@ var facts = ["אני נפתחת לכל מי שרוצה",
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity('מחפשת אהבה (עדי)', { type: 'PLAYING' });
+    bot.user.setActivity('מחפשת אהבה (ליעד)', { type: 'PLAYING' });
 
 });
 
