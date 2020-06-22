@@ -2,16 +2,17 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
-var facts = ["אני השחר העולה",
-             "אני ובוכריס לא חברים!",
-             "סתיו הוא ילד מעצבן",
-             "*קולות שוקולד*"
+var facts = ["אילי הזה חושב שהוא גבר",
+             "אילי ברנשטיין חושב שהוא מגניב",
+             "אילי ברנשטיין",
+             "ברנשטיין אילי",
+             "מי הוא חושב שהוא האילי ברנשטיין הזה"
              ];
 
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity('ללא כלוסטרול', { type: 'PLAYING' });
+    bot.user.setActivity('אילי ברנשטיין', { type: 'PLAYING' });
 
 });
 
