@@ -2,8 +2,10 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
-var facts = ["אני פרה ואני גאה",
-             "שומן הוא המאכל האהוב עליי"
+var facts = ["אני השחר העולה",
+             "אני ובוכריס לא חברים!",
+             "סתיו הוא ילד מעצבן",
+             "*קולות שוקולד*"
              ];
 
 bot.on('ready', () => {
