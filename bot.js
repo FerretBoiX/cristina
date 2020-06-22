@@ -2,17 +2,18 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
-var facts = ["אילי הזה חושב שהוא גבר",
-             "אילי ברנשטיין חושב שהוא מגניב",
-             "אילי ברנשטיין",
-             "ברנשטיין אילי",
-             "מי הוא חושב שהוא האילי ברנשטיין הזה"
+var facts = ["ג'סי הכוסון",
+             "ג'סי תעשה לי ילד",
+             "או אמ ג'י ג'סי תעשה אותי",
+             "*קולות אנדרהיל*",
+             "ג'סי שערות בחזה",
+             "ג'סי בוא למיטה"
              ];
 
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity('אילי ברנשטיין', { type: 'PLAYING' });
+    bot.user.setActivity("ג'סי אנדרהיל", { type: 'PLAYING' });
 
 });
 
