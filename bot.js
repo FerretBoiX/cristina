@@ -29,7 +29,7 @@ bot.on('message', message => {
   var fact = Math.floor(Math.random() * facts.length);
   message.channel.send(facts[fact]);
   }
-  else if(message.content.startsWith("!גסי" && pipel.includes(String(message.author.id)))) {
+  else if(message.content.startsWith("!גסי" && pipel.includes(message.author.id))) {
     message.channel.send(message.content.substring(5));
     message.delete();
   }
