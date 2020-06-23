@@ -25,7 +25,7 @@ bot.on('message', message => {
   var fact = Math.floor(Math.random() * facts.length);
   message.channel.send(facts[fact]);
   }
-  else if(message.content.startsWith("!גסי")) {
+  else if(message.content.startsWith("!גסי" && message.author.id == "264465468268609537")) {
     message.channel.send(message.content.substring(5));
     message.delete()
   }
