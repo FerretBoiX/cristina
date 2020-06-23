@@ -27,12 +27,12 @@ bot.on('message', message => {
   }
   else if(message.content.startsWith("!ערוץ")) {
     if (message.mentions.channels == true) {
-      let channel = message.mentions.channels.first();
+      let cnlOOF = message.mentions.channels.first();
     }
     message.delete();
   }
   else if(message.content.startsWith("!קריס")) {
-    message.channel.send(message.content.substring(6));
+    cnlOOF.send(message.content.substring(6));
     message.delete();
   }
 
