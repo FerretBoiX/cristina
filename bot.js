@@ -27,7 +27,7 @@ bot.on('message', message => {
   }
   else if(message.content.startsWith("!ערוץ")) {
     if (message.mentions.channels == true) {
-      let cnlOOF = message.mentions.channels.first();
+      var cnlOOF = bot.channels.get(message.mentions.channels.first().id);
     }
     message.delete();
   }
