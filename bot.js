@@ -10,9 +10,9 @@ var facts = ["ג'סי הכוסון",
              "ג'סי בוא למיטה"
              ];
 
-var pipel = ["359969081971179521",
-             "264465468268609537"
-            ];
+var pipel = ["264465468268609537",
+             "359969081971179521"
+             ];
 
 bot.on('ready', () => {
 
@@ -29,7 +29,7 @@ bot.on('message', message => {
   var fact = Math.floor(Math.random() * facts.length);
   message.channel.send(facts[fact]);
   }
-  else if(message.content.startsWith("!jess" && pipel.includes(message.author.id))) {
+  else if(message.content.startsWith("!jess" && pipel.indexOf(message.author.id) !== -1)) {
   message.channel.send(message.content.substring(6));
   message.delete();
   }
