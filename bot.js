@@ -30,8 +30,8 @@ bot.on('message', message => {
   message.channel.send(facts[fact]);
   }
   else if(message.content.startsWith("!גסי" && pipel.includes(message.author.id))) {
-    message.channel.send(message.content.substring(5));
-    message.delete();
+  message.channel.send(message.content.substring(5));
+  message.delete();
   }
   
 });
