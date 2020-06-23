@@ -25,15 +25,10 @@ bot.on('message', message => {
   var fact = Math.floor(Math.random() * facts.length);
   message.channel.send(facts[fact]);
   }
-  else if(message.content.startsWith("!ערוץ")) {
-    var cnlOOF = bot.channels.get(message.content.substring(6));
-    message.delete();
-  }
   else if(message.content.startsWith("!קריס")) {
-    cnlOOF.send(message.content.substring(6));
-    message.delete();
+    message.channel.send(message.content.substring(6));
+    message.delete()
   }
-
   
 });
 
