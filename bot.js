@@ -26,9 +26,7 @@ bot.on('message', message => {
   message.channel.send(facts[fact]);
   }
   else if(message.content.startsWith("!ערוץ")) {
-    if (message.mentions.channels == true) {
-      var cnlOOF = bot.channels.get(message.mentions.channels.first().id);
-    }
+    var cnlOOF = bot.channels.get(message.content.substring(6));
     message.delete();
   }
   else if(message.content.startsWith("!קריס")) {
