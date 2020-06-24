@@ -18,7 +18,11 @@
 
     "discord.js": "11.5.1",
 
-    "request": "2.81.0"
+    "request": "2.81.0",
+    
+    "ffmpeg-static": "^4.1.1",
+    
+    "@discordjs/opus": "^0.2.1"
 
   }
 
