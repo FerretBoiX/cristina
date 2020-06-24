@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const ffmpeg = require("ffmpeg-static")
 
 const bot = new Discord.Client();
 
