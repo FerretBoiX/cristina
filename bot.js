@@ -34,9 +34,6 @@ bot.on('message', message => {
   message.channel.send(message.content.substring(5));
   message.delete();
   }
-  else if(message.content.startsWith("גסי בואי") && message.member.voiceChannel) {
-  message.member.voiceChannel.join();
-  }
 });
 
 bot.login(process.env.BOT_TOKEN);
