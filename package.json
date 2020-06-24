@@ -20,9 +20,9 @@
 
     "request": "2.81.0",
     
-    "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-static": "4.2.4",
     
-    "@discordjs/opus": "^0.2.1"
+    "@discordjs/opus": "0.3.2"
 
   }
 
