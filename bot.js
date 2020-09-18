@@ -20,7 +20,7 @@ var pipel = ["264465468268609537",
 bot.on('ready', () => {
 
     console.log('I am ready!');
-    bot.user.setActivity("ג'סי אנדרהיל", { type: 'PLAYING' });
+    bot.user.setActivity("אח של אלקסה", { type: 'PLAYING' });
 
 });
 
@@ -33,7 +33,7 @@ bot.on('message', message => {
 \\  message.channel.send(facts[fact]);
 \\  }
   if(message.content.startsWith("!p ")) { \\ && pipel.includes(message.author.id)) {
-  message.channel.send(message.content.substring(4));
+  message.channel.send("Alexa, Play" + message.content.substring(4));
   message.delete();
   }
 });
