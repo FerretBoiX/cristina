@@ -13,7 +13,7 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
 
-  if(message.content.startsWith("!p ")) { \\ && pipel.includes(message.author.id)) {
+  if(message.content.startsWith("!p ")) {
   message.channel.send("Alexa, Play" + message.content.substring(4));
   message.delete();
   }
