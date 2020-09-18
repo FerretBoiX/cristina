@@ -14,7 +14,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
 
   if(message.content.startsWith("!p ")) {
-  message.channel.send("Alexa, Play" + message.content.substring(4));
+  message.channel.send("Alexa, Play " + message.content.substring(3));
   message.delete();
   }
                                             
