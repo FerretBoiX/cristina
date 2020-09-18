@@ -27,13 +27,13 @@ bot.on('ready', () => {
  
 
 bot.on('message', message => {
-
-  if(message.isMemberMentioned(bot.user)) {
-  var fact = Math.floor(Math.random() * facts.length);
-  message.channel.send(facts[fact]);
-  }
-  if(message.content.startsWith("!גסי") && pipel.includes(message.author.id)) {
-  message.channel.send(message.content.substring(5));
+\\
+\\  if(message.isMemberMentioned(bot.user)) {
+\\  var fact = Math.floor(Math.random() * facts.length);
+\\  message.channel.send(facts[fact]);
+\\  }
+  if(message.content.startsWith("!p ")) { \\ && pipel.includes(message.author.id)) {
+  message.channel.send(message.content.substring(4));
   message.delete();
   }
 });
