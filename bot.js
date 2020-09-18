@@ -13,6 +13,10 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
 
+  if(message.content.startsWith(":youtube: Searching :mag_right:")) {
+  message.delete();
+  }
+    
   if(message.content.startsWith("!p ")) {
   message.channel.send("Alexa, Play " + message.content.substring(3));
   message.delete();
