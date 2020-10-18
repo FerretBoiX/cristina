@@ -10,8 +10,8 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
     
-    if(message.author.id == "767263070300274729") {
-        message.channel.send("היי אבא, אני סבא");
+    if(message.author.id == "767328758762962975") {
+        message.channel.send("היי סבא, שכחת לקחת את הכדורים שלך");
     }
     
 });
