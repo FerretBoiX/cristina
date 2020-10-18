@@ -8,7 +8,7 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
     console.log("it's time");
 });
 
-bot.on('message', function() { //a ברגע שהודעה נשלחת
+bot.on('message', message => { //a ברגע שהודעה נשלחת
     
     if(message.content.startsWith("אני")) { //a אם ההודעה מתחילה במילה אני
         message.channel.send("היי " + message.content.substring(2) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
