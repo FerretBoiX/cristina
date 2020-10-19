@@ -10,8 +10,9 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 });
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
-    if(racism.includes(message.content)) {
-       return message.channel.send("...");
+    if(racism.includes(message.content.substring(4))) {
+       message.channel.send("...");
+       return;
     }
     else if(message.content.startsWith("אני")) { //a אם ההודעה מתחילה במילה אני
         message.channel.send("היי " + message.content.substring(4) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
