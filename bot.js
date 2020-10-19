@@ -10,7 +10,7 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 });
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
-    if(racism.indexOf(message.content)) {
+    if(racism.includes(message.content)) {
        message.channel.send("...");
        return;
     }
