@@ -11,13 +11,12 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(racism.includes(message.content)) {
-       message.channel.send("...");
-       return;
+       return message.channel.send("...");
     }
-    if(message.content.startsWith("אני")) { //a אם ההודעה מתחילה במילה אני
+    else if(message.content.startsWith("אני")) { //a אם ההודעה מתחילה במילה אני
         message.channel.send("היי " + message.content.substring(4) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
     }
-    if(message.content.startsWith("היי אבא, אני")) { //a אם ההודעה מתחילה במילה אני
+    else if(message.content.startsWith("היי אבא, אני")) { //a אם ההודעה מתחילה במילה אני
         message.channel.send("היי " + message.content.substring(13) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
     }
     
