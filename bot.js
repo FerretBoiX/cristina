@@ -14,7 +14,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
         message.channel.send("היי " + message.content.substring(4) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
     }
     if(message.content.startsWith("היי אבא, אני")) { //a אם ההודעה מתחילה במילה אני
-        message.channel.send("היי " + message.content.substring(12) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
+        message.channel.send("היי " + message.content.substring(13) + ", אני אבא"); //a שולח משהו לחדר של ההודעה
     }
     
 });
