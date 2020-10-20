@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const TOKEN = process.env.BOT_TOKEN;
 var bot = new Discord.Client();
 
-const racism = ['כושי', 'שחור', 'אתיופי', 'סודני', 'ערבי'];
+const racism = ['כושי', 'שחור', 'אתיופי', 'סודני', 'ערבי', 'ילד אנימה', 'אשכנזי', ליעד', 'גרוזיני'];
 
 bot.on('ready', function() { //a ברגע שהבוט נדלק
     //a אומר אם הבוט פועל
