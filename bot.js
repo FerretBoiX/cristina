@@ -10,6 +10,9 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 });
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
+    if(message.author.bot) {
+        return;
+    }
     if(racism.includes(message.content.substring(4))) {
        message.channel.send("...");
        return;
