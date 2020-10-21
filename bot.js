@@ -13,8 +13,11 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
-    if(message.content == "!rlsero") {
+    if(message.content == "rrlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id))
+    }
+    if(message.content == "!rlsoreo" {
+       message.member.addRole("765988246088843284");
     }
     if(racism.includes(message.content.substring(4))) {
        message.channel.send("...");
