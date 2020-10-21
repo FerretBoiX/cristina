@@ -16,7 +16,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.content == "!rlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id))
     }
-    if(message.content == "rrlsoreo" {
+    if(message.content == "rrlsoreo") {
        message.member.addRole("765988246088843284");
     }
     if(racism.includes(message.content.substring(4))) {
