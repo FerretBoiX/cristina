@@ -15,6 +15,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     }
     if(message.content.startsWith("braner ")) {
     if(message.author.id == "264465468268609537") {
+    if(message.author.id == "366890040153866251") {
     var member= message.mentions.members.first();
         // ban
         member.ban().then((member) => {
