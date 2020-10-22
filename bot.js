@@ -13,9 +13,15 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
-    if(message.content.startsWith("braner")) {
-       message.guild.members.message.mentions.users.first().ban();
-    }  
+    if (msg.content.startsWith("braner ")) {
+    if (msg.mentions.members.first()) {
+        msg.mentions.members.first.kick().then((member) => {
+            msg.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+        }).catch(() => {
+            msg.channel.send("I do not have permissions to do this");
+        });
+    }
+    }
     if(message.content == "!rlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id));
     }
