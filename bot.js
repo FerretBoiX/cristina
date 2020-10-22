@@ -13,12 +13,12 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
-    if (msg.content.startsWith("braner ")) {
-    if (msg.mentions.members.first()) {
-        msg.mentions.members.first.kick().then((member) => {
-            msg.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+    if (message.content.startsWith("braner ")) {
+    if (message.mentions.members.first()) {
+        message.mentions.members.first.kick().then((member) => {
+            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
         }).catch(() => {
-            msg.channel.send("I do not have permissions to do this");
+            message.channel.send("I do not have permissions to do this");
         });
     }
     }
