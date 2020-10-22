@@ -14,15 +14,16 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
         return;
     }
     if (message.content.startsWith("braner ")) {
-    if (message.mentions.members.first()) {
-        var kickUser = message.mentions.members.first;
-        kickUser.kick().then((member) => {
-            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+    var member= message.mentions.members.first();
+        // ban
+        member.ban().then((member) => {
+            // Successmessage
+            message.channel.send(":wave: " + member.displayName + " has been successfully banned :point_right: ");
         }).catch(() => {
-            message.channel.send("I do not have permissions to do this");
+             // Failmessage
+            message.channel.send("Access Denied");
         });
-    }
-    }
+    }    
     if(message.content == "!rlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id));
     }
