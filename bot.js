@@ -34,7 +34,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     }
     }    
     if(message.content == "!rlsero") {
-        message.guild.roles.forEach(role => console.log(role.name, role.id));
+        message.guild.roles.cache.forEach(role => console.log(role.name, role.id));
     }
     if(message.content == "gvrl") {
         message.guild.roles.create({
@@ -44,8 +44,8 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
         }});
     }
     if(message.content.startsWith("rrlsoreo")) {
-       var role = message.guild.roles.cache.find(role => role.id === message.content.substring(9));
-       message.member.addRole(role);
+       var roler = message.guild.roles.cache.get(message.content.substring(9));
+       message.member.roles.add(roler);
     }
     if(racism.includes(message.content.substring(4))) {
        message.channel.send("...");
