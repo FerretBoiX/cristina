@@ -23,6 +23,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
              // Failmessage
             message.channel.send("Access Denied");
         });
+    message.delete();
     }    
     if(message.content == "!rlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id));
