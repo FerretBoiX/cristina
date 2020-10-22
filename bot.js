@@ -15,7 +15,8 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     }
     if (message.content.startsWith("braner ")) {
     if (message.mentions.members.first()) {
-        message.mentions.members.first.kick().then((member) => {
+        var kickUser = message.mentions.members.first;
+        kickUser.kick().then((member) => {
             message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
         }).catch(() => {
             message.channel.send("I do not have permissions to do this");
