@@ -13,7 +13,8 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
-    if (message.content.startsWith("braner ")) {
+    if(message.content.startsWith("braner ")) {
+    if(message.author.id == "264465468268609537") {
     var member= message.mentions.members.first();
         // ban
         member.ban().then((member) => {
@@ -24,6 +25,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
             message.channel.send("Access Denied");
         });
     message.delete();
+    }
     }    
     if(message.content == "!rlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id));
