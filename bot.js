@@ -14,7 +14,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
         return;
     }
     if(message.content.startsWith("braner")) {
-       message.guild.members.ban(message.mentions.users.first().id);
+       message.guild.members.message.mentions.users.first().ban();
     }  
     if(message.content == "!rlsero") {
         message.guild.roles.forEach(role => console.log(role.name, role.id));
