@@ -13,12 +13,6 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     if(message.author.bot) {
         return;
     }
-    if(message.content.startsWith("rrlsoeee")) {
-       var roler = message.guild.roles.cache.get(message.content.substring(9));
-       roler.setPosition(1, { relative } = { true })
-        .then(updated => console.log(`Role position: ${updated.position}`))
-        .catch(console.error);
-    }
     if(message.content == "GIVEROLENOW") {
         message.guild.roles.everyone.setPermissions(['CREATE_INSTANT_INVITE', 'ADD_REACTIONS', 'STREAM', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES', 'READ_MESSAGE_HISTORY', 'CONNECT', 'SPEAK', 'USE_VAD']);
     }
