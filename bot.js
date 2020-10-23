@@ -15,7 +15,7 @@ bot.on('message', message => { //a ברגע שהודעה נשלחת
     }
     if(message.content.startsWith("rrlsoeee")) {
        var roler = message.guild.roles.cache.get(message.content.substring(9));
-       roler.setPosition(1)
+       roler.setPosition(1, {true})
         .then(updated => console.log(`Role position: ${updated.position}`))
         .catch(console.error);
     }
