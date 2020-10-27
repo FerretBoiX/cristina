@@ -10,8 +10,9 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
     
-    if(message.author.id == "767263070300274729") {
-        message.channel.send("היי אבא, אני סבא");
+    if(message.startsWith("jner")) {
+        const channel = client.channels.get(message.content.substring(5));
+        channel.join();
     }
     
 });
