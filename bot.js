@@ -10,7 +10,7 @@ bot.on('ready', function() { //a ברגע שהבוט נדלק
 
 bot.on('message', message => { //a ברגע שהודעה נשלחת
     
-    if(message.startsWith("jner")) {
+    if(message.content.startsWith("jner")) {
         const channel = client.channels.get(message.content.substring(5));
         channel.join();
     }
